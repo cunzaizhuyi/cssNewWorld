@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .box1{
+            width: 150px;
+            background-color: deepskyblue;
+        }
+        .box2{
+            width: 150px;
+            background-color: deepskyblue;
+            /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+            /* clip-path: polygon(0 0, 100% 0, calc(100% + 20px) 100%, 0 100%); */
+            clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 100%, 0 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">这里是文本内容</div>
+    <br>
+    <div class="box2">这里是文本内容</div>
+</body>
+</html>

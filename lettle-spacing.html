@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @keyframes tracking-in-expand {
+            0% {
+                /* 可以用负值 */
+                letter-spacing: -0.5em;
+                opacity: 0;
+            }
+            40% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .tracking-in-expand{
+            color: red;
+            text-align: center;
+            animation: tracking-in-expand 1.7s 50 cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        }
+    </style>
+</head>
+<body>
+    <div class="tracking-in-expand">
+        祝贺飞叶粉丝数突破1000！
+    </div>
+
+    <div class="tracking-in-expand">
+        Congratulations to feiye. The number of fans has exceeded 1000.
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div style="margin-top: 100px; text-align: center">
+        1. letter-spacing可以支持动画
+    </div>
+    <div style="text-align: center">
+        2. letter-spacing可以负值
+    </div>
+    <div style="text-align: center">
+        3. letter-spacing对中文/英文都生效
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画次数可以小数</title>
+    <style>
+        @keyframes fadeIn{
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+        input{
+            animation: fadeIn 2s linear;
+        }
+        input:disabled{
+            animation: fadeIn 4s 0.5 linear forwards;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" value="可用">
+    <input type="text" value="禁用" disabled>
+</body>
+</html>

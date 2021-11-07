@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .ball {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            z-index: 10;
+            background: greenyellow;
+        }
+        .run_top_right {
+            display: block;
+            /* animation: run-right-right 3s 0.4s 1 linear, run-right-top 3s 0.4s 1 cubic-bezier(.66, .1, 1, .41); */
+            /* animation: run-right-right 3s 0.4s 1 linear, run-right-top 3s 0.4s 1 cubic-bezier(0.17,0.86,0.73,0.14); */
+            animation: run-right-right 3s 0.4s 1 ease-in, run-right-top 3s 0.4s 1 ease-in;
+            animation-fill-mode: forwards;
+        }
+        @keyframes run-right-top {
+            0% { bottom: 40px;}
+            100% {bottom: 800px;}
+        }
+        @keyframes run-right-right {
+            0% { left: 40px; }
+            100% { left: 600px; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ball run_top_right"></div>
+</body>
+
+</html>

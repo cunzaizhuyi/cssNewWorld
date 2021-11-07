@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .flex{ display: flex; flex-wrap: wrap; gap: 30px }
+        .box{
+            width: 300px;
+            height: 100px;
+            background-color: deepskyblue;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="font-size: 30px">两种盒子：300 * 100， 100 * 100</div>
+    <hr>
+    <br>
+
+    <div style="font-size: 30px">数值表示法</div>
+    <div class="flex">
+        <div class="box box1" style="border-radius: 10px">border-radius: 10px;</div>
+        <div class="box box2" style="border-radius: 10px 30px;">
+            border-radius: 10px 30px;
+            <br>
+            第1个值：左上角、右下角
+            <br>
+            第2个值：右上角、左下角
+        </div>
+        <div class="box box3" style="border-radius: 10px 30px 50px;">
+            border-radius: 10px 30px 50px;
+            <br>
+            第1个值：左上角
+            <br>
+            第2个值：右上角、左下角
+            <br>
+            第3个值：右下角
+        </div>
+        <div class="box box4" style="border-radius: 10px 30px 50px 70px">
+            border-radius: 10px 30px 50px 70px。
+            <br>
+            从左上角开始，顺时针，直到左下角
+        </div>
+        <div class="box box5" style="border-radius: 30px;">
+            border-radius: 30px;
+            数值原理
+            <div class="circle" style="width: 60px; height: 60px; border-radius: 50%; position: absolute; left:0;top:0"></div>
+            <div class="circle" style="width: 60px; height: 60px; border-radius: 50%; position: absolute; right:0;bottom:0"></div>
+            <div class="circle" style="width: 60px; height: 60px; border-radius: 50%; position: absolute; right:0;top:0"></div>
+            <div class="circle" style="width: 60px; height: 60px; border-radius: 50%; position: absolute; left:0;bottom:0"></div>
+        </div>
+    </div>
+
+
+    <br>
+    <hr>
+    <div style="font-size: 30px">百分比表示法</div>
+    <div class="flex">
+        <div class="box box6" style="width: 100px; height: 100px; border-radius: 10%">
+            border-radius: 10%; 
+        </div>
+
+        <div class="box" style="padding: 20px;border-radius: 50%; width: 100px; height: 100px;">
+            border-radius: 50%; padding: 20px
+        </div>
+        <div class="box" style="padding: 20px;border-radius: 50px; width: 100px; height: 100px;">
+            border-radius: 50px；padding: 20px
+        </div>
+        <div class="box" style="padding: 20px;border-radius: 70px; width: 100px; height: 100px;">
+            border-radius: 70px；padding: 20px
+        </div>
+
+        <div class="box" style="padding: 0; border: 20px solid gray; border-radius: 50%; width: 100px; height: 100px;">
+            border-radius: 50%；border: 20px
+        </div>
+        <div class="box" style="padding: 0;border: 20px solid gray; border-radius: 50px; width: 100px; height: 100px;">
+            border-radius: 50px；border: 20px
+        </div>
+        <div class="box" style="padding: 0;border: 20px solid gray; border-radius: 70px; width: 100px; height: 100px;">
+            border-radius: 70px；border: 20px
+        </div>
+        <div class="box" style="border-radius: 50%">
+            border-radius: 50%
+        </div>
+    </div>
+
+
+    <br>
+    <hr>
+    <div style="font-size: 30px">完整表示法</div>
+    <div class="flex">
+        <div class="box" style="border-radius: 10% / 50%">
+            border-radius: 10% 10% 10% 10%/ 50% 50% 50% 50%
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            margin-bottom: 10px;
+            width: 200px;
+            position: relative;
+            /* font-size: 0; */
+            /* line-height: 0; */
+        }
+        img{ 
+            width: 100%; 
+            /* display: block; */
+            vertical-align: middle;
+        }
+        .selected{
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./zf4.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="./zf4.jpg" alt="">
+        <div class="selected"></div>
+    </div>
+</body>
+</html>

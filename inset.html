@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>inset属性</title>
+
+    <style>
+        body{ display: flex; }
+
+
+        .box{ position: relative; width: 200px;}
+        img{ max-width: 100% ;}
+        .overlay{
+            background:rgba(0, 0, 0, 0.5);
+            position: absolute;
+            /* left: 0; right: 0; top: 0; bottom: 0; */
+            inset: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./zf4.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="./zf4.jpg" alt="">
+        <div class="overlay"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内联元素不生效</title>
+    <style>
+        span{
+            display: inline-block;
+            transform: translateX(100px);
+        }
+        div{
+            transform: translateX(100px);
+        }
+        img{
+            transform: translateX(100px);
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <span>span不能变换</span>
+    <div>div能变换</div>
+    <img src="../zf4.jpg" alt="">
+</body>
+</html>

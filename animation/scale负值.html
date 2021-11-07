@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @keyframes slit-in-vertical {
+            0% {
+                transform: scaleY(-1);
+            }
+            50% {
+                transform: scaleY(0);
+            }
+            100% {
+                transform: scaleY(1);
+            }
+        }
+        .slit-in-vertical {
+            width: 200px;
+            animation: slit-in-vertical 5s infinite ease-out both;
+        }
+        img{ width: 100%; }
+        .box{
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="slit-in-vertical">
+            <img src="../zf4.jpg" alt="">
+        </div>
+        <div class="slit-in-vertical">
+            <img src="../zifeng.jpg" alt="">
+        </div>
+        <div class="slit-in-vertical">
+            <img src="../zifeng2.jpg" alt="">
+        </div>
+        <div class="slit-in-vertical">
+            <img src="../zifeng3.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
